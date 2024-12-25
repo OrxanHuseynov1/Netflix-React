@@ -1,5 +1,5 @@
 import React from 'react'
-import NetflixLogo from '../../assets/netflixLogo.png';
+import NetflixLogo from "../../assets/images/netflixLogo.png"
 
 const Navbar = () => {
   return (

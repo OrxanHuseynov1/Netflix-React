@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar';
 import SignInBorder from './components/SignInBorder';
-import NetflixLogo from '../assets/netflixLogo.png';
+import NetflixLogo from '../assets/images/netflixLogo.png';
 const Login = () => {
 
   return (
