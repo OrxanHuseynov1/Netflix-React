@@ -1,17 +1,11 @@
+
 import React from 'react'
 
 const Ellips = () => {
   return (
-    <><div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center"></div>
-    <div
-      class="relative -mt-[150px] h-[100px] bg-gradient-to-b from-black via-transparent to-transparent 
-            rounded-t-[55%] border-t-4 border-red-600"
-    >
-      <div
-        className=" h-[50px] w-full bg-gradient-to-b rounded-tl-[50%_90%] rounded-tr-[50%_90%]
-from-blue-950 from-10% to-black to-90%"
-      ></div>
-    </div></>
+    <div class="relative w-full -mt-12 h-[50px] border-4 border-transparent bg-gradient-to-r from-pink-700 via-red-600 to-pink-700 bg-clip-border rounded-tl-[50%_100%] rounded-tr-[50%_100%]">
+      <div className="absolute  -left-[4px]   top-[1px] h-[50px] w-full bg-gradient-to-b rounded-tl-[50%_90%] rounded-tr-[50%_90%] from-blue-950 from-10% to-black to-90%"></div>
+    </div>
   )
 }
 
