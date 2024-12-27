@@ -3,15 +3,8 @@ import Navbar from './Navbar'
 
 const Entry = () => {
 
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Email submitted: ${email}`);
-  };
-
   return (
-    <div className='w-full  h-full px-[9rem] bg-cover bg-blend-overlay bg-no-repeat bg-black/70 bg-center bg-[url("https://assets.nflxext.com/ffe/siteui/vlv3/150c4b42-11f6-4576-a00f-c631308b1e43/web/AZ-en-20241216-TRIFECTA-perspective_90a8f7dc-67cc-4d07-b0c9-4f2aed27f1cc_large.jpg")]'>
+    <div className='w-full  h-screen px-[9rem] bg-cover bg-blend-overlay bg-no-repeat bg-black/70 bg-center bg-[url("https://assets.nflxext.com/ffe/siteui/vlv3/150c4b42-11f6-4576-a00f-c631308b1e43/web/AZ-en-20241216-TRIFECTA-perspective_90a8f7dc-67cc-4d07-b0c9-4f2aed27f1cc_large.jpg")]'>
         
         <Navbar/>
         <div className='w-[580px] h-fit mx-auto pt-[180px]'>

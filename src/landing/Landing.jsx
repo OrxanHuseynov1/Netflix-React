@@ -1,4 +1,3 @@
-
 import {useState , useEffect} from 'react'
 import Entry from './components/Entry'
 import Ellips from './components/Ellips'
