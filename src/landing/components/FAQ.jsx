@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import FAQItem from './FAQItem'
-
+import EmailInput from './EmailInput'
 const FAQ = () => {
     const [openItem,setOpenItem] = useState(null)
     
@@ -51,6 +51,8 @@ const FAQ = () => {
                     items.map(item => <FAQItem item={item} openItem={openItem} setOpenItem={setOpenItem} />)
                 }
             </div>
+            <EmailInput witdhInput={750}/>
+
         </div>
     )
 }

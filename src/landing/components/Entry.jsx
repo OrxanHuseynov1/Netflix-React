@@ -1,6 +1,6 @@
 import {useEffect,useState} from 'react'
 import Navbar from './Navbar'
-
+import EmailInput from './EmailInput'
 const Entry = () => {
 
   return (
@@ -10,8 +10,8 @@ const Entry = () => {
         <div className='w-[580px] h-fit mx-auto pt-[180px]'>
             <h1 className='font-bold text-[60px] text-white leading-[65px] text-center'>Unlimited movies, TV shows, and more</h1>
             <p className='text-white font-semibold text-[20px] text-center mt-5'>Starts at EUR 7.99. Cancel anytime.</p>
-            <p className='text-white font-regular text-base text-center mt-7'>Ready to watch? Enter your email to create or restart your membership.</p>
         </div>
+        <EmailInput witdhInput={580}/>
     </div>
   )
 }

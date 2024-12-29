@@ -1,16 +1,24 @@
 import {useState} from 'react'
-import {useNavigate} from 'react-router'
+import { useTranslation } from 'react-i18next';
+import RightSvg from '../../assets/icons/right.svg'
 
-const EmailInput = () => {
+const EmailInput = ({witdhInput}) => {
     const [email,setEmail] = useState('')
-    const navigate = useNavigate()
-    
+    //const navigate = useNavigate()
+    const { t } = useTranslation(); 
     return (
-        <div className='flex items-center h-[55px] w-[580px] mx-auto mt-5 gap-2'>
-            <input className='w-full bg-transparent border-[1px] border-zinc-400 h-full px-4 rounded-[4px] text-white' value={email} onChange={(e) => {setEmail(e.target.value)}} type="text" placeholder='Enter email' />
-            <button className='min-w-[200px] flex items-center justify-center bg-[#e50914] hover:bg-[#ce272ffb] text-white'  onClick={() => {navigate("//",{state:{email:email}})}}>Get Started</button>
-        </div>
+        <>
+            <p className='text-white font-regular text-base text-center mt-7'>{t('ready')}</p>
+            <div style={{ width: witdhInput }} className='flex items-center h-[55px] mx-auto mt-5 gap-2'>
+                <input className='w-full bg-transparent border-[1px] border-zinc-400 h-full px-4 rounded-[4px] text-white' value={email} onChange={(e) => {setEmail(e.target.value)}} type="text" placeholder='Email adress' />
+                <button className='min-w-[200px] flex items-center justify-center bg-[#e50914] hover:bg-[#ce272ffb] text-white font-semibold text-[22px] h-full px-4 pr-6 gap-4 rounded-[4px]'>Get Started
+                    <img className='w-[25px]' src={RightSvg}></img>
+                </button>
+            </div>
+        </>
+
   )
 }
+// onClick={() => {navigate("//",{state:{email:email}})}}
 
 export default EmailInput

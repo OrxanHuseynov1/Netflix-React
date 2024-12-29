@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+#movie-card-contanier {
+    overflow-x: hidden;  /* Varsayılan yatay kaydırma çubuğunu gizle */
+    overflow-y: hidden;  /* Varsayılan dikey kaydırma çubuğunu gizle */
+}
