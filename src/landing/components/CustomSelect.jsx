@@ -1,13 +1,11 @@
 import languageSelect from '../../assets/icons/language-select.svg'
 
-const CustomSelect = ({ selectedOption, setSelectedOption, options = [], logo}) => {
+const CustomSelect = ({ selectedOption, setSelectedOption, options, logo}) => {
   return (
-    <div 
-      className={`relative border border-zinc-400 bg-zinc-800 rounded-[4px] ${logo ? "h-full w-[135px]" : "h-[33px] w-[110px]"}`}>
+    <div className={`relative border border-zinc-400 bg-zinc-800 rounded-[4px] ${logo ? "h-full w-[135px]" : "h-[33px] w-[254.4px]"}`}>
       {logo && <div className="absolute top-2 left-2">{logo}</div>}
 
-      <select
-        value={selectedOption}
+      <select 
         onChange={(e) => {
           const selectedItem = options.find(item => item.value === e.target.value);
           setSelectedOption({title:selectedItem.title,value:e.target.value});
@@ -19,12 +17,8 @@ const CustomSelect = ({ selectedOption, setSelectedOption, options = [], logo}) 
         ))}
       </select>
 
-      <p 
-        className={`absolute top-1 text-white font-roboto text-[16px] left-0 pointer-events-none ${
-          logo ? "left-10" : "left-2"
-        }`}
-      >
-        {selectedOption || "Select"}
+      <p  className={`absolute top-1 text-white font-roboto text-[16px] left-0 pointer-events-none ${ logo ? "left-10" : "left-2"}`}>
+        {selectedOption.title}
       </p>
 
       <img 

@@ -3,9 +3,9 @@ import CustomSelect from './CustomSelect';
 import language from '../../assets/icons/language.svg'
 
 const Footer = () => {
-    const [selectedLanguage,setSelectedLanguage] = useState("English")
+    const [selectedLanguage,setSelectedLanguage] = useState({title:"English",value:"en"})
 
-    const Languages = ["English","Russian"]
+    const Languages = [{title:"English",value:"en"},{title:"Russian",value:"ru"}]
 
     const items = [
         { title: "FAQ", link: "https://help.netflix.com/tr/node/412" },

@@ -4,14 +4,13 @@ import RightSvg from '../../assets/icons/right.svg'
 
 const EmailInput = ({witdhInput}) => {
     const [email,setEmail] = useState('')
-    //const navigate = useNavigate()
     const { t } = useTranslation(); 
     return (
         <>
             <p className='text-white font-regular text-base text-center mt-7'>{t('ready')}</p>
             <div style={{ width: witdhInput }} className='flex items-center h-[55px] mx-auto mt-5 gap-2'>
-                <input className='w-full bg-transparent border-[1px] border-zinc-400 h-full px-4 rounded-[4px] text-white' value={email} onChange={(e) => {setEmail(e.target.value)}} type="text" placeholder='Email adress' />
-                <button className='min-w-[200px] flex items-center justify-center bg-[#e50914] hover:bg-[#ce272ffb] text-white font-semibold text-[22px] h-full px-4 pr-6 gap-4 rounded-[4px]'>Get Started
+                <input className='w-full bg-transparent border-[1px] border-zinc-400 h-full px-4 rounded-[4px] text-white' value={email} onChange={(e) => {setEmail(e.target.value)}} type="text" placeholder={t('email_address')} />
+                <button className='min-w-[200px] flex items-center justify-center bg-[#e50914] hover:bg-[#ce272ffb] text-white font-semibold text-[22px] h-full px-4 pr-6 gap-4 rounded-[4px]'>{t('call_to_action')}
                     <img className='w-[25px]' src={RightSvg}></img>
                 </button>
             </div>

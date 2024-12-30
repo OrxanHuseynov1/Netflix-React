@@ -4,9 +4,10 @@ import {useEffect} from 'react'
 import { createPortal } from 'react-dom'
 import Close from '../../assets/icons/close.svg'
 import Right from '../../assets/icons/right.svg'
+import { useTranslation } from 'react-i18next';
 
 const Modal = ({data,handleModalClose,scrollY}) => {
-
+    const { t } = useTranslation(); 
     useEffect(() => {console.log(scrollY)},[scrollY])
 
 
@@ -29,7 +30,7 @@ const Modal = ({data,handleModalClose,scrollY}) => {
                     <div className='px-8 pb-5' onClick={(e)=> {e.stopPropagation()}}>
                         <GenreItems genres={data.genres}/>
                         <p className='text-white'>{data.overview}</p>
-                        <button className='flex items-center justify-center bg-[#e50914] hover:bg-[#ce272ffb] text-white text-[18px] h-full px-4 py-3 pr-6 gap-4 rounded-[4px] mt-5'>Get Started
+                        <button className='flex items-center justify-center bg-[#e50914] hover:bg-[#ce272ffb] text-white text-[18px] h-full px-4 py-3 pr-6 gap-4 rounded-[4px] mt-5'>{t('call_to_action')}
                             <img src={Right} alt="" />
                         </button>
                     </div>
