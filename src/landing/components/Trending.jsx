@@ -53,7 +53,7 @@ const Trending = ({ scrollY }) => {
                 <ScrollButton direction="left" />
                 <div id="movie-card-contanier" className="w-full flex gap-12 overflow-scroll py-5 pl-7">
                     {data.map((item, index) => (
-                        <MovieCard setSelectedItem={setSelectedItem} item={item} index={index} />
+                        <MovieCard setSelectedItem={setSelectedItem} item={item} index={index} key={item.id} />
                     ))}
                 </div>
                 <ScrollButton direction="right" />

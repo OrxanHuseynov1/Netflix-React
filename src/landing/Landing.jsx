@@ -20,7 +20,7 @@ const Landing = () => {
         <div id='landing' className={'w-full relative'}>
             <Entry/>
             <Ellips/>
-            <div className='w-full px-[144px] relative mb-20'>
+            <div className="w-full max-w-[1440px] px-4 sm:px-8 md:px-16 lg:px-32 xl:px-[144px] relative mb-20 mx-auto">
                 <Trending scrollY={scrollY}/>
                 <ReasonsToJoin/>
                 <FAQ/>

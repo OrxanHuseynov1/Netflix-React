@@ -48,21 +48,21 @@
     "why_seeing_this_language_answer": "Your browser preferences determine the language shown here.",
     
     "questions": "Questions? Contact us.",
-    "phone_number": "1-844-505-2993",
     "faq": "FAQ",
     "investor_relations": "Investor Relations",
-    "buy_gift_cards": "Buy Gift Cards",
-    "cookie_preferences": "Cookie Preferences",
-    "legal_notices": "Legal Notices",
+    "privacy": "Privacy",
+    "speed_test": "Speed Test",
     "help_center": "Help Center",
     "jobs": "Jobs",
+    "cookie_preferences": "Cookie Preferences",
+    "legal_notices": "Legal Notices",
+    "account": "Account",
     "ways_to_watch": "Ways to Watch",
     "corporate_information": "Corporate Information",
     "only_on_netflix": "Only on Netflix",
-    "account": "Account",
     "netflix_shop": "Netflix Shop",
     "terms_of_use": "Terms of Use",
     "contact_us": "Contact Us",
-    "do_not_sell_or_share_my_personal_information": "Do Not Sell or Share My Personal Information",
-    "media_center":""
+    "media_center":"Media Center",
+    "netflix_Azerbaijan":"Netflix Azerbaijan"
 }

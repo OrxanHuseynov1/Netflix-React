@@ -8,7 +8,7 @@ const FAQItem = ({item,openItem,setOpenItem}) => {
     return (
         <button className='bg-[#2D2D2D] w-full' onClick={() => {setOpenItem(prevState => prevState !== item.id ? item.id : null)}}>
             <div className='flex items-center justify-between px-[24px] py-[28px] border-b-[1px] border-black hover:bg-[#404040] transition duration-200 ease-in'>
-                <h3 className='text-[24px] text-white'>{item.title}</h3>
+                <h3 className='text-[20px] md:text-[24px] text-white'>{item.title}</h3>
                 <img className={`${itemOpen && "rotate-45"}`} src={plus} alt="plus.svg" />
             </div>
 

@@ -43,14 +43,14 @@
     "why_seeing_this_language_answer": "Этот язык выбран в настройках вашего браузера.",
 
     "questions": "Есть вопросы? Свяжитесь с нами.",
-    "phone_number": "1-844-505-2993",
     "faq": "Распространенные вопросы",
     "investor_relations": "Для инвесторов",
-    "buy_gift_cards": "Купить подарочные карты",
-    "cookie_preferences": "Настройки файлов cookie",
-    "legal_notices": "Юридические уведомления",
+    "privacy": "Конфиденциальность",
+    "speed_test": "Проверка скорости",
     "help_center": "Центр помощи",
     "jobs": "Вакансии",
+    "cookie_preferences": "Настройки файлов cookie",
+    "legal_notices": "Юридические уведомления",
     "ways_to_watch": "Способы просмотра",
     "corporate_information": "Корпоративная информация",
     "only_on_netflix": "Только на Нетфликс",
@@ -58,6 +58,6 @@
     "netflix_shop": "Магазин Нетфликс",
     "terms_of_use": "Условия использования",
     "contact_us": "Связаться с нами",
-    "do_not_sell_or_share_my_personal_information": "Не продавать и не делиться моей личной информацией",
-    "media_center": "Медиа-центр"
+    "media_center": "Медиацентр",
+    "netflix_Azerbaijan":"Netflix Азербайджан"
   }

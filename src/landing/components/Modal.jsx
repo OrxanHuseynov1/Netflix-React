@@ -15,7 +15,7 @@ const Modal = ({data,handleModalClose,scrollY}) => {
     createPortal(
         <div style={{top:scrollY}} onClick={handleModalClose} className='absolute left-0 w-screen h-screen bg-black/50 flex items-center justify-center'>
             <motion.div initial={{opacity:0}} animate={{opacity:1 , transition:{duration:0.3}}}>
-                <div className='size-[620px] border-px border-zinc-300 rounded-lg bg-zinc-900 overflow-y-scroll relative'>
+                <div className='size-[420px] md:size-[620px] border-px border-zinc-300 rounded-lg bg-zinc-900 overflow-y-scroll relative'>
                     <button onClick={handleModalClose} className='z-10 absolute top-4 right-4 hover:bg-zinc-500/25 hover:cursor-pointer rounded-full p-2 flex items-center justify-center'>
                         <img className='' src={Close} alt="" />
                     </button>

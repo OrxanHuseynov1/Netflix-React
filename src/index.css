@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 #movie-card-contanier {
-    overflow-x: hidden;  /* Varsayılan yatay kaydırma çubuğunu gizle */
-    overflow-y: hidden;  /* Varsayılan dikey kaydırma çubuğunu gizle */
+    overflow-x: hidden;  
+    overflow-y: hidden; 
+}
+@media (min-width: 768px) {
+    .email-input-container {
+        width: 580px;
+        display: flex;
+        flex-direction: row;
+    }
+    .email-input {
+        width: 70%;
+    }
+    .get-started-button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .email-input-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .email-input, .get-started-button {
+        width: 100%;
+    }
 }

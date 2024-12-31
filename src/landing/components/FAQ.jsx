@@ -4,6 +4,7 @@ import EmailInput from './EmailInput'
 import { useTranslation } from 'react-i18next';
 
 const FAQ = () => {
+    const [witdy, setWitdy] = useState(false);
     const { t } = useTranslation(); 
     const [openItem,setOpenItem] = useState(null)
     
@@ -54,7 +55,7 @@ const FAQ = () => {
                     items.map(item => <FAQItem item={item} openItem={openItem} setOpenItem={setOpenItem} />)
                 }
             </div>
-            <EmailInput witdhInput={750}/>
+            <EmailInput witdhInput={witdy}/>
 
         </div>
     )

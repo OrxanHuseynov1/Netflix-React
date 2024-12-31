@@ -5,7 +5,7 @@ import Landing from './landing/Landing'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 const App = () => {
   return (
-    <div className='bg-black max-w-[1440px] mx-auto h-full min-h-screen w-full transition duration-300 ease-in-out overflow-hidden'>
+    <div className='bg-black mx-auto h-full min-h-screen w-full transition duration-300 ease-in-out overflow-hidden'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Landing/>}></Route>

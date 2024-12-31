@@ -33,12 +33,12 @@ const ReasonsToJoin = () => {
     ]
   
     return (
-    <div>
-        <h2 className="text-white font-medium text-[24px] mb-4">{t('more_reasons_to_join')}</h2>
-        <div className="flex gap-4">
-            {items.map(item => <ReasonCard item={item}/>)}
+        <div>
+            <h2 className="text-white font-medium text-[24px] mb-4">{t('more_reasons_to_join')}</h2>
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-4 ">
+                {items.map(item => <ReasonCard item={item}/>)}
+            </div>
         </div>
-    </div>
   )
 }
 
