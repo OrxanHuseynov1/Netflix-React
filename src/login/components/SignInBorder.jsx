@@ -9,7 +9,7 @@ const SignInBorder = () => {
     };
 
     return (
-        <div className='h-[741px] mt-[205px]'>
+        <div className='h-[741px] mt-[100px]'>
             <div className='flex items-center justify-center h-screen'>
                 <div className='px-[68px] py-12 w-[450px] h-[741.89] bg-[#000000B3]'>
                     <h1 className='text-white text-[32px] leading-9 font-bold'>Sign In</h1>
