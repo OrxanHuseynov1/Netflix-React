@@ -12,7 +12,7 @@ const LoginEntry = () => {
           <SignInBorder />
         </div>  
         <div className='h-[310.4px] bg-black'>
-          <Footer_SigIn/>
+          <Footer_SigIn marginBottom={72}/>
         </div>
       </div>
 

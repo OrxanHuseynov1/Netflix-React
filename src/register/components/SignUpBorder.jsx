@@ -3,7 +3,7 @@ import { useStore } from 'zustand';
 import { themeStore } from '../../common/Store.js'
 import { useNavigate } from 'react-router-dom';
 
-const SignInBorder = () => {
+const SignUpBorder = () => {
     const navigate = useNavigate();
     const {addAccessToken} = useStore(themeStore);
     const [email, setEmail] = useState('');
@@ -15,11 +15,11 @@ const SignInBorder = () => {
         setIsVisible((prev) => !prev);
     };
 
-    const handleSignUpClick = () => {
-        navigate('/Register')  
-      }
+    const handleSignInClick = () => {
+        navigate('/Login')  
+    }
 
-    const login = async () => {
+    const register = async () => {
         try{
             const response = await fetch('https://api.example.com/login', {
                 method: 'POST',
@@ -41,24 +41,19 @@ const SignInBorder = () => {
         }   
     }
 
+
     return (
-        <div className='h-[741px] mt-[50px] lg:mt-[-200px] xl:mt-[100px]'>
+        <div className='h-[741px] mt-[50px]'>
             <div className='flex items-center justify-center h-screen'>
                 <div className='px-[68px] py-12 w-[450px] h-[741.89] bg-[#000000B3]'>
-                    <h1 className='text-white text-[32px] leading-9 font-bold'>Sign In</h1>
+                    <h1 className='text-white text-[32px] leading-9 font-bold'>Sign Up</h1>
                     <input className='mt-10 h-14 w-[314px] bg-transparent border rounded border-[#343534] p-2' name='email' type="email" placeholder='Email or mobile number' onChange={(e) => setEmail(e.target.value)} />
                     <input className='mt-5 h-14 w-[314px] bg-transparent border rounded border-[#343534] p-2' name='password' type="password" placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
-                    <button className='mt-5 text-white text-[16px] font-medium h-10 w-[314px] bg-[#e50914] transition-all duration-500 hover:bg-[#c11119] border rounded border-transparent' onClick={login}>Sign In</button>
-                    <p className='text-[#7c7c7b] font-medium text-base mt-4 ml-[147px]'>OR</p>
-                    <button className='mt-5 text-white text-[16px] font-medium h-10 w-[314px] bg-[#434343] transition-all duration-500 hover:bg-[#2f2f2f] border rounded border-transparent'>Use a Sign-In Code</button>
-                    <button className='mt-3 ml-[92px] text-white text-[17px] h-10 w-[140px] bg-transparent hover:underline hover:text-[#979e99]'>Forgot password?</button>
-                    <div className="inline-flex items-center mt-5 space-x-3">
-                        <input className="form-checkbox text-black h-4 w-5" type="checkbox" />
-                        <span className='text-white'>Remember me</span>
-                    </div>
+                    <input className='mt-5 h-14 w-[314px] bg-transparent border rounded border-[#343534] p-2' name='password' type="password" placeholder='Confirm Password' onChange={(e) => setPassword(e.target.value)} />
+                    <button className='mt-5 text-white text-[16px] font-medium h-10 w-[314px] bg-[#e50914] transition-all duration-500 hover:bg-[#c11119] border rounded border-transparent' onClick={register}>Sign Up</button>
                     <div className='mt-3 space-x-2'>
-                        <span className='text-[#FFFFFFB3]'>New to Netflix?</span>
-                        <button onClick={handleSignUpClick}  className='text-white font-medium hover:underline'>Sign up now.</button>
+                        <span className='text-[#FFFFFFB3]'>Do you have Netflix?</span>
+                        <button onClick={handleSignInClick} className='text-white font-medium hover:underline'>Sign in now.</button>
                     </div>
 
                     <div className='mt-4'>
@@ -84,8 +79,7 @@ const SignInBorder = () => {
                 </div>
             </div>
 
-        </div>
-    );
-};
+        </div>    )
+}
 
-export default SignInBorder;
+export default SignUpBorder
